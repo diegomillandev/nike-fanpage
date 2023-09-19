@@ -26,7 +26,7 @@ const Nav = () => {
   return (
     <header className="absolute padding-x py-8 z-10 w-full">
       <nav className="relative flex justify-between items-center max-container ">
-        <a href="/" className="flex flex-grow basis-0">
+        <a href="/" className="flex ">
           <img src={headerLogo} alt="logo" />
         </a>
         <ul className="flex justify-center items-center max-lg:hidden">
@@ -41,7 +41,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24 flex-grow basis-0 justify-end items-center">
+        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24  justify-end items-center">
           <a href="/" className="hover-links md:py-2 lg:px-2 xl:px-6">
             Sign in
           </a>
