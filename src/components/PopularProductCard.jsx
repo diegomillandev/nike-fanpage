@@ -2,16 +2,16 @@ import { star } from "../assets/icons";
 
 const PopularProductCard = ({ imgURL, name, price }) => {
   return (
-    <div className="flex flex-1 flex-col w-full max-sm:w-full">
-      <div className="overflow-hidden w-[17.5rem] h-[17.5rem] relative after:bg-red-300 group rounded-3xl cursor-pointer">
+    <div className="flex flex-col">
+      <div className="overflow-hidden w-[17.5rem] md:w-auto max-sm:h-auto relative after:bg-red-300 group rounded-3xl cursor-pointer">
         <div className="absolute w-full h-full bg-black/20 flex justify-center items-center -bottom-[100%] group-hover:bottom-0 transition-all duration-300">
           <button className="bg-coral-red text-white font-montserrat font-medium text-xl py-2 px-4 rounded-full hover:scale-105">
             Add to Cart
           </button>
         </div>
-        <img src={imgURL} alt="" className="" />
+        <img src={imgURL} alt="" className="object-cover" />
       </div>
-      <div className="mt-8 flex justify-start gap-2.5">
+      <div className="mt-4 flex justify-start gap-2.5">
         <img src={star} alt="ratio icon" width={24} height={24} />
         <p className="text-slate-gray leading-normal font-montserrat text-xl">
           (4.5)
