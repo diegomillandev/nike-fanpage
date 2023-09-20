@@ -27,7 +27,13 @@ const Hero = () => {
           Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
-        <Button label="Shop Now" iconURL={arrowRight} />
+        <Button
+          label="Shop Now"
+          iconURL={arrowRight}
+          bgColor={"bg-coral-red"}
+          textColor={"text-white"}
+          borderColor={"border-coral-red"}
+        />
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div key={stat.label}>
@@ -52,7 +58,11 @@ const Hero = () => {
         <div className="absolute flex sm:gap-6 gap-4 -bottom-[5%] sm:left-[10%] max-sm:px-6">
           {shoes.map((shoe) => (
             <div key={shoe.thumbnail} className="">
-              <ShoeCard imgURL={shoe} changeBigShoeImage={(shoe) => setBigShoeImg(shoe)} bigShoeImg={bigShoeImg} />
+              <ShoeCard
+                imgURL={shoe}
+                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                bigShoeImg={bigShoeImg}
+              />
             </div>
           ))}
         </div>
